@@ -1,0 +1,5 @@
+<?php
+// set the default timezone to use.
+date_default_timezone_set('Europe/London');
+echo '<p> Now:'. date('d-m-Y') ."</p>";
+?>

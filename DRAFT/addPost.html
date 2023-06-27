@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href = "css/reset.css" rel = "stylesheet"/>
+        <link href = "css/addpost.css" rel = "stylesheet"/>
+        <title>Add Blog</title>
+    </head>
+
+    <body>
+        
+        <header id="heading">
+            <a href="index.html">Fang Shu Li</a>
+        </header>
+        <fieldset>
+            <h1>Add Blog</h1>
+            <p id="notice">* Title and blog cannot be empty</p>
+            <form name="addpost" action="" onsubmit="stop()" method="post">
+                
+                    <div id="entertitle">   
+                        <input type="text" name="title" id="title" placeholder="* Title">
+                    </div>
+
+                    <div id="enterblog">
+                        <textarea name="blog" id="blog" rows="20" cols="70" placeholder="* Enter your text here"></textarea>
+                    </div>
+
+                    <div id="submit">
+                        <input type="submit" name="post" value="Post">
+                        <input type="reset" name="clear" value="Clear">
+                    </div>    
+            </form>
+        </fieldset>
+
+        <script>
+            function stop(){
+                var title = document.forms["addpost"]["title"].value;
+                var blog = document.forms["addpost"]["blog"].value;
+                //var date = new date();
+                
+                clear();
+
+                if(title==null || title==""){
+                    document.getElementById('notice').style.color="red";
+                    document.getElementById('title').style.borderColor="red";
+                    event.preventDefault();
+                }
+                
+                if(blog==null || blog==""){
+                    document.getElementById('notice').style.color="red";
+                    document.getElementById('blog').style.borderColor="red";
+                    event.preventDefault();
+                }
+            }
+            function clear(){
+                //reset
+                document.getElementById('notice').style.color="black";
+                document.getElementById('blog').style.borderColor="black";
+                document.getElementById('title').style.borderColor="black";
+
+            }
+        </script>
+
+    </body>
+</html>

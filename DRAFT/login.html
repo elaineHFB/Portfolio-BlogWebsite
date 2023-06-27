@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href = "css/reset.css" rel = "stylesheet"/>
+        <link href = "css/form.css" rel = "stylesheet"/>
+        <title>Login</title>
+    </head>
+
+    <body>
+        
+            <!--回头把link删了-->
+            <header>
+                <nav id="heading">
+                    <a href="index.html">Fang Shu Li</a>
+                </nav>
+            </header>     
+            
+            <!--
+                <?php echo $_SERVER['PHP_SELF'] ?>
+            -->
+        <form action="php/authentication.php" method="post">
+            <fieldset>
+                <p>
+                    <label>Login</label><br>
+                    <input type="email" name="email" placeholder="Email" id="email"><br>
+                    <input type="password" name="password" placeholder="Password" id="password"><br>
+                </p>
+                <input type="submit" name="Login" value="Login">
+            </fieldset>
+        </form>
+    </body>
+</html>
