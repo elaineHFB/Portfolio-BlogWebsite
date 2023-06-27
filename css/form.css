@@ -1,0 +1,102 @@
+/* ******************** */
+/*change to all link on colour*/
+a:link{
+	text-decoration: none;
+	color: rgb(73, 160, 163);
+}
+a:visited{
+	color: rgb(134, 159, 180);
+}
+a:hover{
+	color: white;
+}
+
+/* heading*/
+header{
+	background-color: rgb(181, 196, 218);	
+	overflow: hidden;
+}
+header a{
+	padding: 0.5em 0.8em;
+}
+#heading a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
+	padding: 1%;
+}
+
+/* ul li */
+nav ul{
+	list-style-type: none;
+  background-color: rgb(164, 194, 238);
+  overflow: hidden;
+}
+nav ul a{
+  float: left;
+  display: block;
+  text-align: center;
+}
+
+/* ***************** */
+/* main body */
+fieldset{
+	background: url(../images/background1.jpg) no-repeat center center fixed;
+	height: 30em;
+}
+#container{
+	background-color: azure;
+	
+	margin-top: 0.4em;
+
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+
+	text-align: center;
+	
+	transform: translate(-50%, 1em);	
+	left: 50%;
+	position: fixed;
+
+}
+
+/*space between boxes小框之间的间隔*/
+.form-row{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/*text boxes, radius, color */
+input, textarea{
+	border-width: 1px;
+	border-radius: 6px;
+	border-color: black;
+}
+
+/* ***************** */
+/*special for login.php*/
+.form-row #password,.form-row #email{
+	width: 200px;
+	height: 20px;
+}
+/*feedback color is red*/
+.feedback{
+	text-align: center;
+	color: crimson;
+}
+
+/* ***************** */
+/*special for addEntry.php*/
+.form-row #title, .form-row #blog{
+	border-width: 1.5px;
+	width: 475px;
+}
+/* textarea */
+.form-row #blog{
+	resize: none;
+}

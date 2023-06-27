@@ -1,0 +1,162 @@
+/*do hr and clear*/
+.clear{
+	margin:0px;
+	padding:0px;
+	height:0px;
+	font-size:0px;
+	clear:both;
+	border: 1px solid black;
+	border-bottom: transparent;
+}
+
+/* ******************** */
+/*change to all link on colour*/
+a:link{
+	text-decoration: none;
+	color: rgb(73, 160, 163);
+}
+a:visited{
+	color: rgb(134, 159, 180);
+}
+header a:hover, footer a:hover{
+	color: white;
+}
+
+/* ******************** */
+/* header, footer */
+header,footer{
+	background-color: rgb(164, 194, 238);	
+	overflow: hidden;
+}
+
+/* size of a in header and footer */
+header a{
+	padding: 0.7em 0.8em;
+}
+footer a{
+	padding: 0.4em 0.5em;
+}
+
+/* the big title */
+#heading a{
+	background-color: rgb(181, 196, 218);	
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
+	padding: 1%;
+}
+
+/* ul li */
+nav ul{
+  	list-style-type: none;
+	background-color: rgb(164, 194, 238);
+	overflow: hidden;
+}
+nav ul a{
+	float: left;
+	display: block;
+	text-align: center;
+}
+
+/* footer special */
+footer #email{
+	color: black;
+}
+
+/* ******************** */
+/*main*/
+#main{
+	background: url(../images/background1.jpg) no-repeat center center fixed;
+	height: 30em;
+}
+#main #welcome{
+	text-align: center;
+	padding-top: 13em;
+}
+#main p{
+	margin-bottom: 1em;
+	font-size: 150%;
+}
+#main a{
+	border:1px solid rgb(167, 168, 163);
+	border-radius: 25px;
+	background-color: rgb(177, 212, 226);
+	padding: 2px;
+}
+
+/* ******************** */
+/* article */
+article{
+	background-color: rgb(227, 237, 243);
+	text-align: center;
+}
+.line1, #article-bottom{	
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+#article-top-left{
+	float: left;
+	width: 50%;
+}
+#article-top-left span{
+	float: left;
+	margin-left: 25%;
+	font-size: 120%;
+	font-weight: bold;
+}
+#article-top-right{
+	float: right;
+	width: 50%;
+}
+#article-top-right span{
+	float: right;
+	margin-right: 25%;
+	font-size: 110%;
+	font-weight: bold;
+}
+#article-bottom{
+	float: left;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+
+/* viewBlog.php article 
+table{
+	text-align: center;
+	left: auto;
+}
+article table tr{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+article table .line1{
+	font-size: 125%;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+article table td{
+	font-size: 110%;
+}
+*/
+
+
+
+
+
+
+
+/* ******************** */
+/*max screen size*/
+@media screen and (max-width: 58em){
+	#aboutMe span, #aboutMe img, article aside, article .left{
+		float: none;
+		margin-left: 0;
+	}
+	#aboutMe span, article aside{
+		width: 100%;
+	}
+}

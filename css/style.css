@@ -1,0 +1,163 @@
+/*do hr and clear*/
+.clear{
+	margin:0px;
+	padding:0px;
+	height:0px;
+	font-size:0px;
+	clear:both;
+	border: 1px solid black;
+	border-bottom: transparent;
+}
+
+/* ******************** */
+/*change to all link on colour*/
+a:link{
+	text-decoration: none;
+	color: rgb(73, 160, 163);
+}
+a:visited{
+	color: rgb(134, 159, 180);
+}
+header a:hover, footer a:hover{
+	color: white;
+}
+
+/* ******************** */
+/* header, footer */
+header,footer{
+	background-color: rgb(164, 194, 238);	
+	overflow: hidden;
+}
+
+/* size of a in header and footer */
+header a{
+	padding: 0.7em 0.8em;
+}
+footer a{
+	padding: 0.4em 0.5em;
+}
+
+/* the big title */
+#heading a{
+	background-color: rgb(181, 196, 218);	
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
+	padding: 1%;
+}
+
+/* ul li */
+nav ul{
+  	list-style-type: none;
+	background-color: rgb(164, 194, 238);
+	overflow: hidden;
+}
+nav ul a{
+	float: left;
+	display: block;
+	text-align: center;
+}
+
+/* footer special */
+footer #email{
+	color: black;
+}
+
+/* ******************** */
+/*main*/
+#main{
+	background: url(../images/background1.jpg) no-repeat center center fixed;
+	height: 30em;
+}
+#main #welcome{
+	text-align: center;
+	padding-top: 13em;
+}
+#main p{
+	margin-bottom: 1em;
+	font-size: 150%;
+}
+#main a{
+	border:1px solid rgb(167, 168, 163);
+	border-radius: 25px;
+	background-color: rgb(177, 212, 226);
+	padding: 2px;
+}
+
+/* ******************** */
+/* article */
+article{
+	background-color: rgb(227, 237, 243);
+}
+article section{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+article h2{
+	font-size: 125%;
+	margin-bottom: 1em;
+}
+article table{
+	margin-bottom: 1em;
+	border: 1px solid;
+}
+
+/* img in about me */
+#aboutMe span{
+	float: left;
+	width: 50%;
+}
+#aboutMe img{
+	float:left;
+	margin-left: 25%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/*rest of article to the left or right*/
+article .left{
+	margin-left: 19%;	
+}
+article aside{
+	float: right;
+	width: 50%;
+}
+
+/* viewBlog.php article */
+#article-post{
+
+}
+
+#article-post table tr{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+#article-post table th{
+	font-size: 125%;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* ******************** */
+/*max screen size*/
+@media screen and (max-width: 58em){
+	#aboutMe span, #aboutMe img, article aside, article .left{
+		float: none;
+		margin-left: 0;
+	}
+	#aboutMe span, article aside{
+		width: 100%;
+	}
+}
